@@ -7,7 +7,7 @@ describe('Recordlane client', () => {
     let authorization = '';
     const fakeFetch: typeof fetch = async (_input, init) => {
       authorization = new Headers(init?.headers).get('authorization') ?? '';
-      return new Response(JSON.stringify({product:'Recordlane',version:'0.1.0-alpha.1',api_version:'v1',authentication:[],features:[]}), {status:200, headers:{'content-type':'application/json'}});
+      return new Response(JSON.stringify({product:'Recordlane',version:'0.1.0-alpha.2',api_version:'v1',authentication:[],features:[]}), {status:200, headers:{'content-type':'application/json'}});
     };
     const client = new Recordlane('https://recordlane.invalid', {credentialHook:()=> 'test-token', fetch:fakeFetch});
     expect((await client.capabilities()).api_version).toBe('v1');
