@@ -1,6 +1,6 @@
 {
   "name": "@recordlane/client",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "Typed TypeScript client for Recordlane",
   "license": "Apache-2.0",
   "type": "module",
