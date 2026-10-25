@@ -8,6 +8,6 @@
   "types": "dist/index.d.ts",
   "files": ["dist", "README.md", "LICENSE"],
   "scripts": {"build": "tsc -p tsconfig.json", "test": "vitest run tests/client.test.ts", "test:live": "vitest run tests/live.test.ts"},
-  "devDependencies": {"typescript": "7.0.2", "vitest": "4.1.11"},
+  "devDependencies": {"typescript": "7.0.2", "vitest": "4.1.12"},
   "engines": {"node": ">=20.19"}
 }
